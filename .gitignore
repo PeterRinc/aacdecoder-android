@@ -1,7 +1,9 @@
-*~
+*bin/
+*gen/
+*obj/
+*libs/
+*build/
 .gradle
-build
-decoder/build
-decoder/src/main/libs
-decoder/src/main/obj
-player/build
+.idea
+*.iml
+*local.properties
