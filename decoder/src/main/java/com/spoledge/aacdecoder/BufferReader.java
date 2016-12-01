@@ -22,7 +22,6 @@ package com.spoledge.aacdecoder;
 import android.util.Log;
 
 import java.io.InputStream;
-import java.io.IOException;
 
 
 /**
@@ -157,7 +156,7 @@ public class BufferReader implements Runnable {
                     if (n == -1) stopped = true;
                     else total += n;
                 }
-                catch (IOException e) {
+                catch (Exception e) {
                     Log.e( LOG, "Exception when reading: " + e );
                     stopped = true;
                 }
